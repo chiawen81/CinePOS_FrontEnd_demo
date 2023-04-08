@@ -2,8 +2,8 @@
   "name": "front-end",
   "version": "0.0.0",
   "engines": {
-    "node": ">=16.20.0",
-    "npm": ">=8.9.4"
+    "node": "16.20.0",
+    "npm": "8.9.4"
   },
   "scripts": {
     "ng": "ng",
