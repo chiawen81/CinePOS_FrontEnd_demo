@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/cine-front",
+            "outputPath": "dist/CinePOS_FrontEnd/cine-front",
             "index": "projects/cine-front/src/index.html",
             "main": "projects/cine-front/src/main.ts",
             "polyfills": "projects/cine-front/src/polyfills.ts",
@@ -102,7 +102,14 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/CinePOS_FrontEnd/cine-back/",
+            "repo": "https://github.com/chiawen81/CinePOS_FrontEnd.git",
+            "branch": "gh-pages",
+            "name": "chiawen81",
+            "email": "fangchiawen@gmail.com"
+          }
         }
       }
     },
@@ -120,7 +127,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/cine-back",
+            "outputPath": "dist/CinePOS_FrontEnd/cine-back",
             "index": "projects/cine-back/src/index.html",
             "main": "projects/cine-back/src/main.ts",
             "polyfills": "projects/cine-back/src/polyfills.ts",
@@ -202,6 +209,16 @@
               "projects/cine-back/src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/CinePOS_FrontEnd/cine-back/",
+            "repo": "https://github.com/chiawen81/CinePOS_FrontEnd.git",
+            "branch": "gh-pages",
+            "name": "chiawen81",
+            "email": "fangchiawen@gmail.com"
           }
         }
       }

@@ -1,6 +1,6 @@
 {
   "name": "front-end",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "engines": {
     "node": "16.20.0",
     "npm": "8.9.4"
@@ -10,9 +10,9 @@
     "start:front": "ng serve cine-front --port 4202 --host 0.0.0.0",
     "start:back": "ng serve cine-back --port 4203 --host 0.0.0.0",
     "patchVersion": "npm --no-git-tag-version version patch",
-    "build:front:patch": "npm run patchVersion && ng build cine-front --base-fref /cinePosFront/ --configuration production --output-hashing=all",
-    "build:back:patch": "npm run patchVersion && ng build cine-back --base-fref /cinePosBack/ --configuration production --output-hashing=all",
-    "build:patch": "npm run patchVersion && ng build cine-front --base-fref /cinePosFront/ --configuration production && ng build cine-back --base-fref /cinePosBack/ --configuration production --output-hashing=all",
+    "build:front:patch": "npm run patchVersion && ng build cine-front --base-href /CinePOS_FrontEnd/cine-front/ --configuration production --output-hashing=all",
+    "build:back:patch": "npm run patchVersion && ng build cine-back --base-href /CinePOS_FrontEnd/cine-back/ --configuration production --output-hashing=all",
+    "build:patch": "npm run patchVersion && ng build cine-front --base-href /CinePOS_FrontEnd/cine-front/ --configuration production && ng build cine-back --base-href /CinePOS_FrontEnd/cine-back/ --configuration production --output-hashing=all",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
